@@ -1,6 +1,6 @@
 %h1 My blog
 
-= link_to 'New Post', new_post_path
+= link_to 'New Post', new_post_path, :class => 'small button'
 
 - @posts.each do |post|
   .post-preview
