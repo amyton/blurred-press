@@ -3,12 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 */
 
-$primary-color: #52002d;
+$primary-color: #00bac7;
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
 	color: $primary-color;
 }
 
 .post-preview {
 	border-bottom: 3px solid $primary-color;
 }
+
+a, a:visited {
+	color: darken($primary-color, 20%);
+}
+
+article {
+	h1.title {
+		font-style: italic;
+	}
+
+	time {
+		font {
+			weight: bold;
+			family: Verdana, Geneva, sans-serif;
+			size: 0.8em;
+		}
+	}
+
+	.body p {
+		p {line-height: 1.5em; }
+	}
+}
+
