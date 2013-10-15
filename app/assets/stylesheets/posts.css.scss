@@ -5,6 +5,14 @@
 
 $primary-color: #00bac7;
 
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
 h1, h2, h3, h4, h5, p {
 	color: $primary-color;
 }
@@ -23,15 +31,21 @@ article {
 	}
 
 	time {
-		font {
+		padding: 4px;
+		border: 2px solid darken($primary-color, 10%);
+		@include border-radius(5px);
+		font: {
 			weight: bold;
-			family: Verdana, Geneva, sans-serif;
+			family: 'Merriweather Sans', Geneva, sans-serif;
 			size: 0.8em;
 		}
 	}
 
-	.body p {
-		p {line-height: 1.5em; }
+	.body {
+		p {
+			line-height: 1.5em;
+		}
 	}
 }
+
 
