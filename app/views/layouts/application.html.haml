@@ -1,4 +1,4 @@
-!!! 5
+
 %html
   %head
     %meta{charset: "utf-8"}
@@ -24,21 +24,26 @@
 
       %section.top-bar-section
         %ul.right
-          %li
-            = link_to new_post_path do
-              %i.icon-edit
-              New post
-          %li.divider
-          %li
-            - if current_user
-              = link_to log_out_path do
-                %i.icon-user
-                Log out
-            - else
-              = link_to log_in_path do
-                %i.icon-user
-                Log in
+          = user_content do
+            %li
+              = link_to new_post_path do
+                %i.icon-edit
+                New post
+            %li.divider
+            %li
+              - if current_user
+                = link_to log_out_path do
+                  %i.icon-user
+                  Log out
+              - else
+                = link_to log_in_path do
+                  %i.icon-user
+                  Log in
 
-    .row= yield
+    .row
+      .large-4.columns
+        %aside.panel= yield :sidebar
+
+        .large-8.columns= yield
 
     = javascript_include_tag "application"

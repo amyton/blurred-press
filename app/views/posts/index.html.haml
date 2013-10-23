@@ -1,5 +1,11 @@
-- @posts.each do |post|
-  .post-preview
-    %h2= link_to(post.title, post)
+/ - content for :title do
+/ 	Awesome song posts
 
-    %p= post.body.truncate(75)
+/ - content for :sidebar do
+/ 	%h1 My Blog
+
+- @posts.each do |post|
+	.post-preview
+		%h2= link_to(post.title, post)
+
+		%p= post.body.truncate(75)
