@@ -1,6 +1,12 @@
-%h1 My blog
+- content_for :sidebar do
+  %h2 About Me
 
+  %p I'm a web developer living in Austin, Texas. Welcome to my blog about Latin and Nirvana lyrics!
+
+<<<<<<< HEAD
 = link_to 'New Post', new_post_path, :class => 'small button'
+=======
+>>>>>>> day-2-start
 
 - @posts.each do |post|
   .post-preview

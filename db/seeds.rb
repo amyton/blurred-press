@@ -75,3 +75,5 @@ Duis rutrum erat vel faucibus porttitor. But he knows not what it mean, knows no
 But he knows not what it mean, knows not what it means. Knows not what it means, knows not what it means. But he knows not what it means, knows not what it means. Convallis fringilla ac id dolor. In aliquet accumsan nunc. Mmm. And he likes to sing along, and he likes to shoot his gun. Curabitur fringilla diam a tortor elementum. Mmm. And I say, he's the one who likes all our pretty songs. Mmm. Praesent vulputate lorem. Ut tincidunt leo pulvinar eget. And I say, yeah. Convallis fringilla ac id dolor. Mmm. Porttitor augue eget. Nullam at molestie dui. Bruises on the fruit, tender age in bloom. Tincidunt sed nisi. And I say, yeah. Sollicitudin molestie eu a tortor. Sell the kids for food, weather changes moods. But he knows not what it means, knows not what it means. Fusce condimentum neque et. Massa laoreet convallis. Spring is here again, reproductive glands.
 POST
 )
+
+User.create name: 'Ada Lovelace', email_address: 'ada@themakersquare.com'
